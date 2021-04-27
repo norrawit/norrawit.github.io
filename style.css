@@ -93,6 +93,7 @@ header ul li a {
     animation-delay: calc(var(--scroll) * -1s);
     animation-iteration-count: 1;
     animation-fill-mode: both;
+    z-index: 90;
 }
 @keyframes an01 {
     0%{ left: 0vw; opacity: 1}
@@ -101,6 +102,9 @@ header ul li a {
 }
 .textcontact {
     font-size: 18px;
+}
+.textproject{
+    margin-left: 0px;
 }
 .Eff1{
 	position: absolute;
@@ -111,9 +115,6 @@ header ul li a {
 	height: 15vw;
 	z-index: 11;
 	transition: 0.5s;
-}
-.textproject{
-    margin-left: 0px;
 }
 @keyframes Eff1 { 
 	0%   { left: 45vw; transform: scale(1,1); top: 5vw;}
@@ -199,11 +200,55 @@ header ul li a {
     .textproject{
         text-align: center;
     }
+    .Eff1{
+        position: absolute;
+        animation: Eff1 10s linear infinite;
+        top: 35vw;
+        left: 15vw;
+        width: auto;
+        height: 15vw;
+        z-index: 11;
+        transition: 0.5s;
+    }
+    @keyframes Eff1 { 
+        0%   { left: 65vw; transform: scale(1,1); top: 5vw;}
+        14%  { left: 65vw; transform: scale(1,1); top: 7vw;}
+        28%  { left: 65vw; transform: scale(1,1); top: 5vw;}
+        41%  { left: 70vw; transform: scale(1,1); top: 7vw;}
+        42%  { left: 70vw; transform: scale(-1,1); top: 5vw;}
+        55%  { left: 65vw; transform: scale(-1,1); top: 5vw;}
+        65% { left: 67vw; transform: scale(-1,1); top: 7vw;}
+        75% { left: 65vw; transform: scale(-1,1); top: 5vw;}
+        95% { left: 65vw; transform: scale(-1,1); top: 5vw;}
+        100% { left: 65vw; transform: scale(1,1); top: 5vw;}
+      }
 }
 @media all and (max-width: 765px) {
     .nation {
         padding-left: 5%; margin-top: 150px;
     }
+    .Eff1{
+        position: absolute;
+        animation: Eff1 10s linear infinite;
+        top: 35vw;
+        left: 15vw;
+        width: auto;
+        height: 15vw;
+        z-index: 11;
+        transition: 0.5s;
+    }
+    @keyframes Eff1 { 
+        0%   { left: 65vw; transform: scale(1,1); top: 5vw;}
+        14%  { left: 65vw; transform: scale(1,1); top: 7vw;}
+        28%  { left: 65vw; transform: scale(1,1); top: 5vw;}
+        41%  { left: 70vw; transform: scale(1,1); top: 7vw;}
+        42%  { left: 70vw; transform: scale(-1,1); top: 5vw;}
+        55%  { left: 65vw; transform: scale(-1,1); top: 5vw;}
+        65% { left: 67vw; transform: scale(-1,1); top: 7vw;}
+        75% { left: 65vw; transform: scale(-1,1); top: 5vw;}
+        95% { left: 65vw; transform: scale(-1,1); top: 5vw;}
+        100% { left: 65vw; transform: scale(1,1); top: 5vw;}
+      }
 }
 
 @media all and (max-width: 575px) {
